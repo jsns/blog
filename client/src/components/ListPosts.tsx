@@ -3,6 +3,7 @@ import EditPost from './EditPost'
 import ViewPost from './ViewPost'
 import axios from 'axios';
 
+// @TODO limit words in body on main page so view button has use.
 const ListPosts: React.FC = () => {
 
     const [posts, setPosts] = useState<any[]>([]);

@@ -9,8 +9,6 @@ const Header: React.FC = () => {
     const CreatePost = async (e: any) => {
         e.preventDefault();
         try {
-            const t = { title }
-            const b = { body }
             await axios.post('http://localhost:5000/posts', {
                 "title": title,
                 "body": body
@@ -23,7 +21,7 @@ const Header: React.FC = () => {
 
     return (
         <React.Fragment>
-            <h1 className="mt-5">My Blog</h1>
+            <h1 className="mt-5">Jacob's Blog</h1>
             <button className="btn btn-success mt-2" data-toggle="modal" data-target="#CreateModal">Create a Post</button>
 
             <div className="modal" id="CreateModal">
